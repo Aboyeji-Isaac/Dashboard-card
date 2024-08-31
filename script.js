@@ -2,7 +2,7 @@ const ctx = document.getElementById('myDonutChart').getContext('2d');
 const myDonutChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Bluevet'],
+        labels: ['Cash', 'Other', 'Supermarket', 'Restaurant'],
         datasets: [{
             data: [300, 50, 100],
             backgroundColor: ['#6692fd', '#5e58f6', '#34308f', '#55af7'],

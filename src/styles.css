@@ -66,7 +66,6 @@ body {
 }
 .wrapper .side-bar .inner-side-bar li {
   list-style: none;
-  margin-bottom: 56px;
   text-decoration: none;
 }
 .wrapper .side-bar .inner-side-bar a {
@@ -253,9 +252,16 @@ body {
   display: flex;
   position: relative;
 }
+.wrapper .second-card .transaction-items img {
+  width: 50px;
+}
 .wrapper .second-card .transaction-items h5 {
   margin: 0;
   padding: 0;
+}
+.wrapper .second-card .transaction-items .replenish, .wrapper .second-card .transaction-items .pay,
+.wrapper .second-card .transaction-items .requisites, .wrapper .second-card .transaction-items .favourites {
+  place-items: center;
 }
 .wrapper .second-card .transaction-items .replenish {
   background-color: #ffffff;

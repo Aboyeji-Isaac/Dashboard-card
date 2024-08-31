@@ -88,7 +88,7 @@ body {
 
             li{
                 list-style: none;
-                margin-bottom: 56px;
+                // margin-bottom: 56px;
                 text-decoration: none;
             }
 
@@ -96,6 +96,13 @@ body {
                 text-decoration: none;
                 color: $light-text;
             }
+
+            // h5{
+            //     float: right;
+            //     top: 0;
+            // }
+
+
 
         }
     }
@@ -338,9 +345,17 @@ body {
             display: flex;
             position: relative;
 
+            img{
+                width: 50px;
+            }
+
             h5{
                 margin: 0;
                 padding: 0;
+            }
+            .replenish, .pay,
+            .requisites, .favourites{
+                place-items: center;
             }
 
 
@@ -364,6 +379,10 @@ body {
                 height: 115px;
                 width: 115px;
                 box-shadow: 10px 10px 20px $shadow-color;
+
+                // img{
+                //     width: 0px;
+                // }
             }
 
             .requisites{
