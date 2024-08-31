@@ -67,10 +67,19 @@ body {
 .wrapper .side-bar .inner-side-bar li {
   list-style: none;
   text-decoration: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px;
 }
 .wrapper .side-bar .inner-side-bar a {
   text-decoration: none;
   color: #c3c4c9;
+}
+.wrapper .side-bar .inner-side-bar i {
+  margin-right: 30px;
+  width: 24px;
+  height: 24px;
 }
 .wrapper .first-card {
   margin-left: 35px;
@@ -343,4 +352,11 @@ body {
 .wrapper .second-card .data-collections ul li:nth-child(3) {
   margin-left: 7rem;
   font-size: 20px;
+}
+.wrapper .second-card .data-collections ul #myDonutChart {
+  max-width: 200px;
+}
+.wrapper .second-card .data-collections ul .chart-container {
+  width: 100%;
+  max-width: 200px;
 }/*# sourceMappingURL=styles.css.map */

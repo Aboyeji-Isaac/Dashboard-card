@@ -90,11 +90,21 @@ body {
                 list-style: none;
                 // margin-bottom: 56px;
                 text-decoration: none;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+                padding: 10px;
             }
 
             a{
                 text-decoration: none;
                 color: $light-text;
+            }
+
+            i{
+                margin-right: 30px;
+                width: 24px;
+                height: 24px;
             }
 
             // h5{
@@ -460,6 +470,15 @@ body {
                         font-size: 20px;
                     }
 
+                }
+
+                #myDonutChart{
+                    max-width: 200px;
+                }
+
+                .chart-container{
+                    width: 100%;
+                    max-width: 200px;
                 }
             }
 

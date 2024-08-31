@@ -4,8 +4,8 @@ const myDonutChart = new Chart(ctx, {
     data: {
         labels: ['Cash', 'Other', 'Supermarket', 'Restaurant'],
         datasets: [{
-            data: [300, 50, 100],
-            backgroundColor: ['#6692fd', '#5e58f6', '#34308f', '#55af7'],
+            data: [600, 50, 100, 600],
+            backgroundColor: ['#6692fd', '#5e58f6', '#41c3fd', '#5e5bf4'],
             borderColor: 'transparent',
             // hoverBackgroundColor: ['#ff6384', '#36a2eb', '#ffcd56', '#5e5af7']
             // borderWidth:1,
