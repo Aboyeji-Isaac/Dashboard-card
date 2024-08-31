@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+$primary-color: #f1f2f6;
+$background-color: #f1f2f6;
+$shadow-color: #dee1ea;
+$side-bar-background: #1d1c58;
+$inner-side-bar-background: #262466;
+$card-background: #ffffff;
+$light-text: #c3c4c9;
+$text-color: #3d3d3d;
+$light-grey: #eaeeef;
+$hover-border-effect: #706ed9;
+$hover-text-effect: #505050;
+
+body {
+    font-family: 'poppins';
+    background-color: #e6e9f0;
+    color: $text-color;
+    place-items: center;
+    padding: 100px;
+}
+
+.wrapper{
+    height: 934px;
+    background-color: $primary-color;
+    box-shadow: 10px 10px 20px $shadow-color;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "side-bar  header header"
+        "side-bar first-card second-card"
+        "side-bar first-card second-card";
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+    background-color: $primary-color;
+    box-shadow: 10px 10px 20px $shadow-color;
+
+    header{
+        grid-area: header;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 35px;
+        color: $text-color;
+    }
+
+    .side-bar{
+        overflow: hidden;
+        margin-top: -20px;
+        margin-left: -20px;
+        margin-bottom: -20px;
+        grid-area: side-bar;
+        padding: 30px;
+        align-items: center;
+        place-items: center;
+        background-color: $side-bar-background;
+        color: $primary-color;
+
+
+        img{
+            height: 107px;
+            width: 105px;
+            margin-top: 3rem;
+            margin-left: 2rem;
+            border-radius: 50%;
+        }
+
+        h4{
+            // margin-top: -px;
+            margin-left: 4rem;
+            font-weight: 200;
+        }
+
+        .inner-side-bar{
+            height: 70%;
+            margin-top: 83px;
+            margin-left: -30px;
+            margin-right: -30px;
+            border-radius: 40px 40px 0px 0px;
+            padding: 50px;
+            place-items: center;
+            background-color: $inner-side-bar-background;
+
+            li{
+                list-style: none;
+                margin-bottom: 56px;
+                text-decoration: none;
+            }
+
+            a{
+                text-decoration: none;
+                color: $light-text;
+            }
+
+        }
+    }
+
+    .first-card{
+        margin-left: 35px;
+        grid-area: first-card;
+        color: $text-color;
+    
+
+        grid-template-areas:
+        "citibank-plus"
+        "citibank-visa"
+        "transaction";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    .citibank-plus{
+        border-radius: 10px;
+        grid-area: citibank-plus;
+        padding: 15px;
+        height: auto;
+        margin-bottom: 22px;
+        background-color: $card-background;
+        color: $text-color;
+        box-shadow: 10px 10px 20px $shadow-color;
+
+
+        .atm-card{
+            width: 85px;
+            height: 58px;
+            background-color: #44c2fd;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+            // margin: 15px;
+
+
+            h6{
+                color: $primary-color;
+                font-weight: 400;
+            }
+
+            img{
+                margin-top: 1.5rem;
+                width: 1rem;
+                height: 1rem;
+            }
+
+        }
+
+        h3{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .navicon{
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 320px;
+            font-size: 30px;
+            color: $light-text;
+            font-weight: 500;
+        }
+
+        .item-1{
+            position: relative;
+            border-bottom: 2px solid $light-grey;
+
+            h3{
+                position: absolute;
+                margin-top: 5px;
+                margin-left: 6rem;
+            }
+
+            h4{
+                font-weight: 400;
+                position: relative;
+                margin-top: 40px;
+                margin-left: 1.2rem;
+                color: #707070;
+
+            }
+
+            h5{
+                margin-top: 40px;
+                margin-left: 100px;
+                font-size: 20px;
+
+            }
+
+        }
+
+        .item-2{
+            border-bottom: 2px solid $light-grey;
+
+            img{
+                margin-top: 10px;
+                width: 3rem;
+                height: 2.5rem;
+            }
+
+
+            h4{
+                margin-left: 3.5rem;
+                color: #cdced2;
+                font-weight: 400;
+            }
+
+            h5{
+                font-weight: 500;
+                color: $light-text;
+                margin-left: 7rem;
+            }
+            
+        }
+
+        .item-3{
+            position: relative;
+            margin-top: 2rem;
+
+            .atm-card{
+                background-color: #eaeeef;
+
+                h6{
+                    color: #6490f9;
+                }
+            }
+
+            h3{
+                margin-top: -5px;
+                margin-left: 20px;
+                display: flex;
+                position: relative;
+            }
+            
+            h5{
+               margin-left: -7.5rem;
+               display: flex;
+               position: relative;
+               color: #cdced2; 
+               font-weight: 300;
+            }
+
+            // img{
+            //     margin-top: 1rem;
+            //     width: 1rem;
+            //     height: 1rem;
+            // }
+        }
+
+        .item-1, .item-2, .item-3{
+            display: flex;
+        }
+
+    }
+
+    .citibank-visa{
+        // display: flex;
+        border-radius: 10px;
+        grid-area: citibank-visa;
+        padding: 10px;
+        height: auto;
+        margin-bottom: 22px;
+        background-color: $card-background;
+        color: $text-color;
+        box-shadow: 10px 10px 20px $shadow-color;
+
+        .atm-card{
+            width: 85px;
+            height: 58px;
+            background-color: #6692fd;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+            // margin: 15px;
+
+
+
+            h6{
+                color: $primary-color;
+                font-weight: 400;
+            }
+
+            img{
+                margin-top: 1.5rem;
+                width: 1rem;
+                height: 1rem;
+            }
+
+        }
+
+        
+        h3{
+            // display: flex;
+            position: absolute;
+            margin-top: -50px;
+            margin-left: 6rem;
+        }
+
+        .navicon{
+            display: grid;
+            position: absolute;
+            margin-top: -70px;
+            margin-left: 330px;
+            font-size: 30px;
+            color: $light-text;
+            font-weight: 500;
+        }
+
+        h4{
+            font-weight: 400;
+            margin-top: -70px;
+            margin-left: 100px;
+        }
+
+        h5{
+            margin-top: -60px;
+            margin-left: 310px;
+            font-weight: 700;
+        }
+    }
+
+    .transaction{
+        border-radius: 10px;
+        grid-area: transaction;
+        padding: 10px;
+        background-color: $card-background;
+        color: $text-color;
+        box-shadow: 10px 10px 20px $shadow-color;
+    }
+    }
+
+    .second-card{
+        grid-area: second-card;
+        margin-left: 26px;
+        color: $text-color;
+
+        .transaction-items{
+            display: flex;
+            position: relative;
+
+            h5{
+                margin: 0;
+                padding: 0;
+            }
+
+
+            .replenish{
+                background-color: $card-background;
+                border-radius: 10px;
+                margin-right: 20px;
+                height: 115px;
+                width: 115px;
+                padding: 20px;
+                box-sizing: border-box;
+                box-shadow: 10px 10px 20px $shadow-color;
+            }
+
+            .pay{
+                background-color: $card-background;
+                box-sizing: border-box;
+                border-radius: 10px;
+                margin-right: 20px;
+                padding: 20px;
+                height: 115px;
+                width: 115px;
+                box-shadow: 10px 10px 20px $shadow-color;
+            }
+
+            .requisites{
+                background-color: $card-background;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding: 20px;
+                margin-right: 20px;
+                height: 115px;
+                width: 115px;
+                box-shadow: 10px 10px 20px $shadow-color;
+            }
+
+            .favourites{
+                background-color: $card-background;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding: 20px;
+                height: 115px;
+                width: 115px;
+                box-shadow: 10px 10px 20px $shadow-color;
+            }
+        }
+
+        .data-collections{
+            height: auto;
+            width: auto;
+            display: grid;
+            padding: 10px;
+            background-color: $card-background;
+            box-shadow: 10px 10px 20px $shadow-color;
+            margin-top: 30px;
+            border-radius: 10px;
+
+            
+            // height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3fr, 1fr);
+            grid-template-rows: auto;
+            
+
+            ul{
+                margin-bottom: 50px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                grid-gap: 10px;
+
+                li{
+
+                    list-style: none;
+                    
+                    a{
+                        text-decoration: none;
+                        color: $light-text;
+
+                        &:hover{
+                            color:$hover-text-effect;
+                            font-weight: 200;
+                            border-bottom: 3px solid $hover-border-effect;
+                            padding-bottom: 15px;
+                        }
+                    }
+
+                    &:nth-child(1){
+                        margin-left: -1rem;
+
+                    }
+
+                    &:nth-child(2){
+                        margin-left: -2rem;
+                    }
+
+                    &:nth-child(3){
+                        margin-left: 7rem;
+                        font-size: 20px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
