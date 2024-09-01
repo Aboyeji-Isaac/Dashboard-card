@@ -2,49 +2,50 @@ const ctx = document.getElementById('myDonutChart').getContext('2d');
 const myDonutChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['Cash', 'Other', 'Supermarket', 'Restaurant'],
+        labels: ['Cash', 'Other', 'Supermarkets', 'Restaurants'],
         datasets: [{
-            data: [600, 50, 100, 600],
+            data: [950, 227, 534, 343],
             backgroundColor: ['#6692fd', '#5e58f6', '#41c3fd', '#5e5bf4'],
             borderColor: 'transparent',
-            // hoverBackgroundColor: ['#ff6384', '#36a2eb', '#ffcd56', '#5e5af7']
-            // borderWidth:1,
-            hoverOffset: 50,
+            borderWidth: 1,
+            hoverOffset: 20, // Increase hover offset for expansion effect
         }]
     },
     options: {
         responsive: true,
         cutout: '80%', // Size of the donut hole
-        animation:{
-            duration: 500,
-            easing: 'easeOutBounce',
-            animateScale: true,
-            // animateRotate: true,
-        },
-
-        hover:{
-            onHover: function(e, activeElements){
-                if(activeElements.length){
-                    e.target.style.cursor = 'pointer';
-                } else{
-                    e.terget.style.cursor = 'default';
-                }
+        plugins: {
+            legend: {
+                display: false, // Hide the legend
             },
+            tooltip: {
+                enabled: false, // Disable the tooltip
+            }
+        },
+        hover: {
             mode: 'nearest',
             intersect: true,
         },
-        plugins: {
-            legend: {
-                position: 'top', // Position of the legend
-            },
-            tooltip: {
-                callbacks: {
-                    label: function(context) {
-                        return `${context.label}: ${context.raw}`;
-                    }
-                }
-            }
+        animation: {
+            duration: 700,
+            easing:'easeOutBounce',
+            animateScale: true,
+            animateRotate: true,
         }
-        
+    }
+});
+
+// Hover event to update center label
+document.getElementById('myDonutChart').addEventListener('mousemove', function(event) {
+    const activePoints = myDonutChart.getElementsAtEventForMode(event, 'nearest', { intersect: true }, true);
+    if (activePoints.length > 0) {
+        const index = activePoints[0].index;
+        const label = myDonutChart.data.labels[index];
+        const value = myDonutChart.data.datasets[0].data[index];
+        const percentage = Math.round((value / myDonutChart.data.datasets[0]._meta[0].total) * 100);
+
+        // Update center text
+        document.getElementById('centerLabelText').textContent = `$${value}`;
+        document.getElementById('centerLabelSubText').textContent = `${percentage}%`;
     }
 });

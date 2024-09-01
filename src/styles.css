@@ -24,12 +24,23 @@ body {
   background-color: #f1f2f6;
   box-shadow: 10px 10px 20px #dee1ea;
 }
+.wrapper .navicon {
+  cursor: pointer;
+}
 .wrapper header {
   grid-area: header;
   font-size: 15px;
   font-weight: 600;
   margin-left: 35px;
   color: #3d3d3d;
+}
+.wrapper header a {
+  position: relative;
+  margin-left: 55.5rem;
+  top: -4rem;
+  text-decoration: none;
+  color: #c3c4c9;
+  font-size: 20px;
 }
 .wrapper .side-bar {
   overflow: hidden;
@@ -77,9 +88,9 @@ body {
   color: #c3c4c9;
 }
 .wrapper .side-bar .inner-side-bar i {
-  margin-right: 30px;
-  width: 24px;
-  height: 24px;
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
 }
 .wrapper .first-card {
   margin-left: 35px;
@@ -122,7 +133,7 @@ body {
 }
 .wrapper .first-card .citibank-plus .navicon {
   position: absolute;
-  margin-top: -20px;
+  margin-top: -10px;
   margin-left: 320px;
   font-size: 30px;
   color: #c3c4c9;
@@ -228,7 +239,7 @@ body {
 .wrapper .first-card .citibank-visa .navicon {
   display: grid;
   position: absolute;
-  margin-top: -70px;
+  margin-top: -60px;
   margin-left: 330px;
   font-size: 30px;
   color: #c3c4c9;
@@ -245,12 +256,21 @@ body {
   font-weight: 700;
 }
 .wrapper .first-card .transaction {
+  display: grid;
   border-radius: 10px;
   grid-area: transaction;
   padding: 10px;
   background-color: #ffffff;
   color: #3d3d3d;
   box-shadow: 10px 10px 20px #dee1ea;
+}
+.wrapper .first-card .transaction .trans-item-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.wrapper .first-card .transaction .trans-item-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 .wrapper .second-card {
   grid-area: second-card;
@@ -339,9 +359,9 @@ body {
 }
 .wrapper .second-card .data-collections ul li a:hover {
   color: #505050;
-  font-weight: 200;
+  font-weight: 600;
   border-bottom: 3px solid #706ed9;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .wrapper .second-card .data-collections ul li:nth-child(1) {
   margin-left: -1rem;
@@ -350,13 +370,22 @@ body {
   margin-left: -2rem;
 }
 .wrapper .second-card .data-collections ul li:nth-child(3) {
-  margin-left: 7rem;
+  margin-left: 5rem;
   font-size: 20px;
 }
-.wrapper .second-card .data-collections ul #myDonutChart {
-  max-width: 200px;
+.wrapper .second-card .data-collections ul li i {
+  margin-top: -3rem;
+  margin-left: 7rem;
 }
-.wrapper .second-card .data-collections ul .chart-container {
-  width: 100%;
-  max-width: 200px;
+.wrapper .second-card .data-collections ul #chartLabels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+.wrapper .second-card .data-collections ul #chartLabels span {
+  font-size: 20px;
+  margin-right: 8px;
 }/*# sourceMappingURL=styles.css.map */

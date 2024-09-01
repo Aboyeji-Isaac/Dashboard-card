@@ -41,12 +41,28 @@ body {
     background-color: $primary-color;
     box-shadow: 10px 10px 20px $shadow-color;
 
+    .navicon{
+        cursor: pointer;
+    }
+
     header{
+        // display: flex;
         grid-area: header;
         font-size: 15px;
         font-weight: 600;
         margin-left: 35px;
         color: $text-color;
+
+        a{
+            // display: flex;
+            position: relative;
+            margin-left: 55.5rem;
+            top: -4rem;
+            text-decoration: none;
+            color: $light-text;
+            font-size: 20px;
+        }
+
     }
 
     .side-bar{
@@ -94,7 +110,9 @@ body {
                 grid-template-columns: auto 1fr;
                 align-items: center;
                 padding: 10px;
+
             }
+
 
             a{
                 text-decoration: none;
@@ -102,9 +120,9 @@ body {
             }
 
             i{
-                margin-right: 30px;
-                width: 24px;
-                height: 24px;
+                margin-right: 20px;
+                width: 35px;
+                height: 35px;
             }
 
             // h5{
@@ -171,7 +189,7 @@ body {
 
         .navicon{
             position: absolute;
-            margin-top: -20px;
+            margin-top: -10px;
             margin-left: 320px;
             font-size: 30px;
             color: $light-text;
@@ -316,7 +334,7 @@ body {
         .navicon{
             display: grid;
             position: absolute;
-            margin-top: -70px;
+            margin-top: -60px;
             margin-left: 330px;
             font-size: 30px;
             color: $light-text;
@@ -337,12 +355,23 @@ body {
     }
 
     .transaction{
+        display: grid;
         border-radius: 10px;
         grid-area: transaction;
         padding: 10px;
         background-color: $card-background;
         color: $text-color;
         box-shadow: 10px 10px 20px $shadow-color;
+
+        .trans-item-1{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+
+        .trans-item-2{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
     }
     }
 
@@ -450,9 +479,9 @@ body {
 
                         &:hover{
                             color:$hover-text-effect;
-                            font-weight: 200;
+                            font-weight: 600;
                             border-bottom: 3px solid $hover-border-effect;
-                            padding-bottom: 15px;
+                            padding-bottom: 5px;
                         }
                     }
 
@@ -466,20 +495,52 @@ body {
                     }
 
                     &:nth-child(3){
-                        margin-left: 7rem;
+                        margin-left: 5rem;
                         font-size: 20px;
+                    }
+
+                    i{
+                        margin-top: -3rem;
+                        margin-left: 7rem;
                     }
 
                 }
 
-                #myDonutChart{
-                    max-width: 200px;
-                }
+                // #chartContainer{
+                //     max-width: 200px;
+                //     min-height: 200px;
+                //     position: relative;
+                // }
 
-                .chart-container{
-                    width: 100%;
-                    max-width: 200px;
+                // #myDonutChart{
+                //     transition: transform 0.2s ease;
+                // }
+
+                // .chart-container{
+                //     width: 200px;
+                //     max-width: 100px;
+                // }
+
+                #chartLabels{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    color: #666;
+                    margin-bottom: 8px;
+
+
+
+
+                    span{
+                        font-size: 20px;
+                        margin-right: 8px;
+                        
+                    }
+                    
+
                 }
+                
             }
 
         }

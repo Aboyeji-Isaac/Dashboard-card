@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Card</title>
     <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="Hover-master/css/hover.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"> -->
     <link rel="stylesheet" href="line-awesome-1.3.0 (2)/1.3.0/css/line-awesome.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -12,6 +14,7 @@
     <div class="wrapper">
         <header>
             <h1>Card</h1>
+            <a href="#"><i class="las la-sliders-h"></i></a>
         </header>
         <div class="side-bar">
             <div class="icon">
@@ -30,9 +33,8 @@
                 <li><a href="#"><i class="las la-credit-card"></i><span>Account</span></a></li>
                 <li><a href="#"><i class="las la-exchange-alt"></i><span>Transactions</span></a></li>
                 <li><a href="#"><i class="las la-heart"></i><span>Bonus</span></a></li>
-                <li><a href="#"><i class="las la-balance-scale-right"></i><span>Investments</span></a></li>
-                <li><a href="#"><span></span></a></li>
-                <li><a href="#"><i class="las-la-settings"></i><span>Settings</span></a></li>
+                <li><a href="#"><i class="las la-signal"></i><span>Investments</span></a></li>
+                <li><a href="#"><i class="las la-cog"></i><span>Settings</span></a></li>
             </div>
         </div>
         <div class="first-card">
@@ -47,7 +49,7 @@
                     </div>
                     <h3>Citibank Plus</h3>
                     <div class="navicon">
-                        ...
+                        <i class="las la-ellipsis-h"></i>
                     </div>
                     <h4>Balance:</h4>
                     <h5><sub>$</sub> 2 505</h5>
@@ -87,14 +89,26 @@
                 </div>
                 <h3>Citibank Visa 
             </h3>
-            <div class="navicon">...</div>
+            <div class="navicon">
+                <i class="las la-ellipsis-h"></i>
+            </div>
             <h4>Balance</h4>
                 <h5><sub>$</sub> 1 453</h5>
             </div>
             <h1>Transaction</h1>
             <div class="transaction">
-                <p>Amazon</p><br>
-                <p>Wallmart</p>
+                <div class="transaction-ites trans-items-1">
+                    <img src="assets/amazon-icon.png" alt="">
+                    <h5>Amazon</h5>
+                    <h6>citibank-plus</h6>
+                    <h5>$253</h5>
+                </div>
+                <div class="transaction-items trans-item-2">
+                    <img src="assets/wallmart-icon.png" alt="">
+                    <h5>wallmart</h5>
+                    <h6>citibank-visa</h6>
+                    <h5>$75</h5>
+                </div>
             </div>
         </div>
         <div class="second-card">
@@ -120,18 +134,31 @@
             <div class="data-collections">
                 <ul>
                     <li>
-                        <a href="#">Const</a>
+                        <a href="#" class="hvr-underline-from-left">Costs</a>
                     </li>
                     <li>
-                        <a href="#">Income</a>
+                        <a href="#" class="hvr-underline-from-left">Income</a>
                     </li>
                     <li>
-                        <a href="#">November</a>
+                        <a href="#" class="hvr-underline-from-left">November <i class="las la-angle-down"></i></a>
                     </li>
                 </ul>
-                <div class="chart-container">
+                <div style="position: relative; width: 300px; margin: auto;">
                     <canvas id="myDonutChart"></canvas>
+                    <div id="centerLabel" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                        <div id="centerLabelText" style="font-size: 20px; color: #51575e;">Restaurant</div>
+                        <div id="centerLabelText" style="font-size: 24px; color: #343a40;">$343</div>
+                        <div id="centerLabelSubText" style="font-size: 16px; color: #343a40;">17%</div>
+                    </div>
                 </div>
+                <div id="chartLabels" style="text-align: center; margin-top: 20px;">
+                    <div><span style="color: #6692fd;">●</span> Cash $950</div>
+                    <div><span style="color: #5e58f6;">●</span> Other $227</div>
+                    <div><span style="color: #41c3fd;">●</span> Supermarkets $534</div>
+                    <div><span style="color: #5e5bf4;">●</span> Restaurants $343</div>
+                </div>
+                
+                
             </div>
         </div>
     </div>
