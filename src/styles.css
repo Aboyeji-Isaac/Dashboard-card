@@ -374,7 +374,8 @@ body {
   font-size: 20px;
 }
 .wrapper .second-card .data-collections ul li i {
-  margin-top: -3rem;
+  display: grid;
+  margin-top: -25px;
   margin-left: 7rem;
 }
 .wrapper .second-card .data-collections ul #chartLabels {
