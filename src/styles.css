@@ -119,6 +119,9 @@ body {
   color: #3d3d3d;
   box-shadow: 10px 10px 20px #dee1ea;
 }
+.wrapper .first-card .citibank-plus span {
+  font-size: 18px;
+}
 .wrapper .first-card .citibank-plus .atm-card {
   width: 85px;
   height: 58px;
@@ -268,6 +271,9 @@ body {
   font-weight: 700;
   font-size: 25px;
 }
+.wrapper .first-card .citibank-visa h5 span {
+  font-size: 18px;
+}
 .wrapper .first-card .sub-title {
   font-size: 25px;
 }
@@ -280,6 +286,12 @@ body {
   color: #3d3d3d;
   box-shadow: 10px 10px 20px #dee1ea;
 }
+.wrapper .first-card .transaction span {
+  font-size: 20px;
+}
+.wrapper .first-card .transaction .currency {
+  font-size: 15px;
+}
 .wrapper .first-card .transaction .price {
   margin-left: 12rem;
   font-weight: 600;
@@ -291,7 +303,7 @@ body {
   color: #c3c4c9;
   font-weight: 300;
   margin-left: -50px;
-  margin-right: -20px;
+  margin-right: -30px;
 }
 .wrapper .first-card .transaction img {
   height: 40px;
@@ -330,10 +342,6 @@ body {
 .wrapper .second-card .transaction-items h5 {
   margin: 0;
   padding: 0;
-}
-.wrapper .second-card .transaction-items .replenish, .wrapper .second-card .transaction-items .pay,
-.wrapper .second-card .transaction-items .requisites, .wrapper .second-card .transaction-items .favourites {
-  place-items: center;
 }
 .wrapper .second-card .transaction-items .replenish {
   background-color: #ffffff;

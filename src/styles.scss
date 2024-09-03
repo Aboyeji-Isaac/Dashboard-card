@@ -168,6 +168,10 @@ body {
         color: $text-color;
         box-shadow: 10px 10px 20px $shadow-color;
 
+        span{
+            font-size: 18px;
+        }
+
 
         .atm-card{
             width: 85px;
@@ -365,6 +369,10 @@ body {
             margin-right: -20px;
             font-weight: 700;
             font-size: 25px;
+
+            span{
+                font-size: 18px;
+            }
         }
     }
 
@@ -381,6 +389,14 @@ body {
         color: $text-color;
         box-shadow: 10px 10px 20px $shadow-color;
 
+        span{
+            font-size: 20px;
+        }
+
+        .currency{
+            font-size: 15px;
+        }
+
         .price{
             margin-left: 12rem;
             font-weight: 600;
@@ -394,7 +410,7 @@ body {
             color: $light-text;
             font-weight: 300;
             margin-left: -50px;
-            margin-right: -20px;
+            margin-right: -30px;
         }
 
         img{
@@ -454,10 +470,6 @@ body {
             h5{
                 margin: 0;
                 padding: 0;
-            }
-            .replenish, .pay,
-            .requisites, .favourites{
-                place-items: center;
             }
 
 
