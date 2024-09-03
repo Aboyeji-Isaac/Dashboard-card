@@ -33,6 +33,7 @@ body {
   font-weight: 600;
   margin-left: 35px;
   color: #3d3d3d;
+  box-sizing: border-box;
 }
 .wrapper header a {
   position: relative;
@@ -157,8 +158,8 @@ body {
 }
 .wrapper .first-card .citibank-plus .item-1 h5 {
   margin-top: 40px;
-  margin-left: 100px;
-  font-size: 20px;
+  margin-left: 90px;
+  font-size: 25px;
 }
 .wrapper .first-card .citibank-plus .item-2 {
   border-bottom: 2px solid #eaeeef;
@@ -176,7 +177,8 @@ body {
 .wrapper .first-card .citibank-plus .item-2 h5 {
   font-weight: 500;
   color: #c3c4c9;
-  margin-left: 7rem;
+  margin-left: 6rem;
+  font-size: 25px;
 }
 .wrapper .first-card .citibank-plus .item-3 {
   position: relative;
@@ -252,25 +254,55 @@ body {
 }
 .wrapper .first-card .citibank-visa h5 {
   margin-top: -60px;
-  margin-left: 310px;
+  margin-left: 280px;
+  margin-right: -20px;
   font-weight: 700;
+  font-size: 25px;
+}
+.wrapper .first-card .sub-title {
+  font-size: 25px;
 }
 .wrapper .first-card .transaction {
   display: grid;
   border-radius: 10px;
   grid-area: transaction;
-  padding: 10px;
+  padding: 20px;
   background-color: #ffffff;
   color: #3d3d3d;
   box-shadow: 10px 10px 20px #dee1ea;
 }
+.wrapper .first-card .transaction .price {
+  margin-left: 12rem;
+}
+.wrapper .first-card .transaction h5 {
+  font-weight: 500;
+}
+.wrapper .first-card .transaction h6 {
+  color: #c3c4c9;
+  font-weight: 300;
+  margin-left: -60px;
+}
+.wrapper .first-card .transaction img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #e2e6ee;
+}
 .wrapper .first-card .transaction .trans-item-1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
+}
+.wrapper .first-card .transaction .trans-item-1 h5 {
+  margin-top: -2px;
+  margin-left: 10px;
 }
 .wrapper .first-card .transaction .trans-item-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
+}
+.wrapper .first-card .transaction .trans-item-2 h5 {
+  margin-top: -2px;
+  margin-left: 10px;
 }
 .wrapper .second-card {
   grid-area: second-card;
@@ -370,6 +402,7 @@ body {
   margin-left: -2rem;
 }
 .wrapper .second-card .data-collections ul li:nth-child(3) {
+  margin-top: -5px;
   margin-left: 5rem;
   font-size: 20px;
 }

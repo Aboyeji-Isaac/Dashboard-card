@@ -27,7 +27,7 @@ const myDonutChart = new Chart(ctx, {
             intersect: true,
         },
         animation: {
-            duration: 700,
+            duration: 900,
             easing:'easeOutBounce',
             animateScale: true,
             animateRotate: true,
