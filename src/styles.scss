@@ -67,6 +67,7 @@ body {
     }
 
     .side-bar{
+        width: 250px;
         overflow: hidden;
         margin-top: -20px;
         margin-left: -20px;
@@ -103,6 +104,14 @@ body {
             place-items: center;
             background-color: $inner-side-bar-background;
 
+            hr{
+                width: 10px;
+                float: left;
+                position: absolute;
+                margin-top: 0;
+                margin-left: 10px;
+            }
+
             li{
                 list-style: none;
                 // margin-bottom: 56px;
@@ -122,8 +131,8 @@ body {
 
             i{
                 margin-right: 20px;
-                width: 35px;
-                height: 35px;
+                width: 50px;
+                height: 50px;
             }
 
             // h5{
@@ -244,7 +253,8 @@ body {
             h5{
                 font-weight: 500;
                 color: $light-text;
-                margin-left: 6rem;
+                margin-left: 5rem;
+                margin-right: -10px;
                 font-size: 25px;
             }
             
@@ -373,6 +383,7 @@ body {
 
         .price{
             margin-left: 12rem;
+            font-weight: 600;
         }
 
         h5{
@@ -382,7 +393,8 @@ body {
         h6{
             color: $light-text;
             font-weight: 300;
-            margin-left: -60px;
+            margin-left: -50px;
+            margin-right: -20px;
         }
 
         img{
