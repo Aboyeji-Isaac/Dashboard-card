@@ -411,7 +411,6 @@ body {
 .wrapper .second-card .data-collections ul li a:hover {
   color: #505050;
   font-weight: 600;
-  border-bottom: 3px solid #706ed9;
   padding-bottom: 5px;
 }
 .wrapper .second-card .data-collections ul li:nth-child(1) {
