@@ -155,10 +155,10 @@ body {
         "citibank-plus"
         "citibank-visa"
         "transaction";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
 
-    .citibank-plus{
+        .citibank-plus{
         border-radius: 10px;
         grid-area: citibank-plus;
         padding: 15px;
@@ -622,4 +622,33 @@ body {
         }
     }
 
+}
+
+@media(max-width: 768px){
+    body {
+        font-family: 'poppins';
+        background-color: #e6e9f0;
+        color: $text-color;
+        place-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .wrapper{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "first-card"
+            "second-card";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        height: auto;
+        padding: 20px;
+        background-color: $primary-color;
+        box-shadow: 10px 10px 20px $shadow-color;
+        .side-bar{
+            display: none;
+        }
+    }
 }
